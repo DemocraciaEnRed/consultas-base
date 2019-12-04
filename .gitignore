@@ -1,0 +1,8 @@
+.DS_Store
+/*.override.yml
+node_modules
+public
+tmp
+.vagrant
+Vagrantfile
+*.swp
