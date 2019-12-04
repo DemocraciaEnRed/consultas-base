@@ -1,6 +1,6 @@
 # Guía de instalación
 
-Consulta Publica requiere **Docker** y **Docker compose**.
+Consultas Digitales requiere **Docker** y **Docker compose**. Se probó exitósamente con las versiones **19.03.5** y **1.24.0** de las mismas (sobre un **Ubuntu 18.04**).
 
 Una vez que verifique que cuenta con estas dependencias, haga un **FORK** y clone su nuevo repositorio.
 
