@@ -1,12 +1,8 @@
-![Consulta Pública Argentina](/docs/consulta-publica-header.png?raw=true "Consulta Pública Argentina")
-
-# Consulta Pública
+# Consultas Digitales
  [![GitHub tag](https://img.shields.io/github/tag/datosgobar/consulta-publica.svg?style=flat-square)](https://GitHub.com/datosgobar/consulta-publica/tags) 
 [![GitHub forks](https://img.shields.io/github/forks/datosgobar/consulta-publica.svg?style=flat-square&label=Fork&maxAge=2592000)](https://GitHub.com/datosgobar/consulta-publica/network/)
 
-> La Plataforma de **Consulta Pública** es un desarrollo basado en la tecnología de [DemocracyOS](https://github.com/DemocracyOS/democracyos) coordinado por la *[Subsecretaría de Innovación Pública y Gobierno Abierto](https://www.argentina.gob.ar/modernizacion/gobiernoabierto)* pertenece al Ministerio de Modernización de Argentina.
-
-El código se basa en [DemocracyOS](https://github.com/DemocracyOS/democracyos), plataforma de código abierto especialmente diseñada para informar, debatir y votar propuestas públicas de forma online hacia la construcción de una democracia adaptada al siglo XXI.
+> La Plataforma de **Consulta Digitales** es un desarrollo basado en [DemocracyOS](https://github.com/DemocracyOS/democracyos), una plataforma de código abierto especialmente diseñada para informar, debatir y votar propuestas públicas de forma online hacia la construcción de una democracia adaptada al siglo XXI.
 
 
 ## Indice
