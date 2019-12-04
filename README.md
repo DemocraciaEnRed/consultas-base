@@ -28,6 +28,11 @@ Para reportar un error en el código basta con reportar un _issue_. Para esto, i
 
 Al realizar cualquiera de estas acciones a nosotrxs nos llegará un mail y pronto le estaremos dando una respuesta del pedido.
 
+## Autorxs
+Antes que nada, están lxs autorxs de DemocracyOS, enumeradxs en su [CONTRIBUTORS.md](https://github.com/DemocracyOS/app/blob/master/CONTRIBUTORS.md).
+
+Además, para esta versión modificada de la plataforma aportaron principalmente: [guillecro](https://github.com/guillecro) y [wencha](https://github.com/wencha).
+
 ## Licencia
 
 Consultas Digitales está disponible bajo la licencia [GNU General Public License v3.0](LICENSE)
