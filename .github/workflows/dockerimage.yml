@@ -1,13 +1,19 @@
+# tutorial en: https://help.github.com/en/actions/automating-your-workflow-with-github-actions/configuring-a-workflow#triggering-a-workflow-with-events
 name: Docker Image CI
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
+    # file paths to consider in the event. Optional; defaults to all.
+    paths:
+      - 'ext/*'
+      - 'dos-override/*'
+      - 'Dockerfile'
 
 jobs:
-
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v1
     - name: Build the Docker image
