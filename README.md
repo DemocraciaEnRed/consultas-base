@@ -18,3 +18,7 @@ Esta plataforma fomenta la interacción entre las instituciones y la ciudadanía
 - [Guía de instalación](/docs/development.md)
 - [Extendiendo la plataforma](/docs/personalizacion.md)
 - [Deployment](/deployment/README.md)
+
+## Licencia
+
+Consultas Digitales está disponible bajo la licencia [GNU General Public License v3.0](LICENSE)
