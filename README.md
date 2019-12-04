@@ -1,6 +1,5 @@
 # Consultas Digitales
- [![GitHub tag](https://img.shields.io/github/tag/datosgobar/consulta-publica.svg?style=flat-square)](https://GitHub.com/datosgobar/consulta-publica/tags) 
-[![GitHub forks](https://img.shields.io/github/forks/datosgobar/consulta-publica.svg?style=flat-square&label=Fork&maxAge=2592000)](https://GitHub.com/datosgobar/consulta-publica/network/)
+![](https://github.com/DemocraciaEnRed/consultas-digitales/workflows/Docker%20Image%20CI/badge.svg)
 
 > La Plataforma de **Consulta Digitales** es un desarrollo basado en [DemocracyOS](https://github.com/DemocracyOS/democracyos): una plataforma de código abierto especialmente diseñada para informar, debatir y votar propuestas públicas de forma online hacia la construcción de una democracia adaptada al siglo XXI.
 
