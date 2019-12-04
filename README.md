@@ -13,9 +13,8 @@ Esta plataforma fomenta la interacción entre las instituciones y la ciudadanía
 
 ## Indice
 
-- [Development](/docs/development.md)
-- [Consejos para el desarrollo](/docs/consejos-dev.md)
-- [Personalización de la plataforma](/docs/personalizacion.md)
-- [Deployment](/deployment/README.md)
-- [Manual instructivo para administradores](/docs/manual-admin.md)
 - [Manual instructivo para usuarios](/docs/manual-usuarios.md)
+- [Manual instructivo para administradores](/docs/manual-admin.md)
+- [Guía de instalación](/docs/development.md)
+- [Extendiendo la plataforma](/docs/personalizacion.md)
+- [Deployment](/deployment/README.md)
