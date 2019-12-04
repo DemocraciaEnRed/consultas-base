@@ -1,4 +1,4 @@
-# Development
+# Guía de instalación
 
 Consulta Publica requiere **Docker** y **Docker compose**.
 
@@ -14,7 +14,7 @@ Es preferente trabajar en el entorno de desarrollo utilizando docker-compose don
 
 Recomendamos ver el siguiente `docker-compose.yml` a continuacion para usarlo como base donde podrá editarlo para dar marcha su instancia de desarrollo local.
 
-En el repositorio encontrará la siguiente plantilla en `docker-compose.yaml.example`. Pase el contenido a `docker-compose.yml` y utilice la pĺantilla como base.
+En el repositorio encontrará la siguiente plantilla en `docker-compose.yaml.example`. Pase el contenido a `docker-compose.yml` y utilice la plantilla como base.
 
 
 ```yaml
@@ -92,7 +92,7 @@ services:
 * Es muy importante que en `STAFF` agregues el email del admin o el de los administradores.
 * Por defecto, tal com esta en el docker-compose, está en el puerto 3000. Puede cambiar el puerto el cual se expone la aplicación (Ej: `3000:9999`)
 * Podés comentar las variables `NOTIFICATION_*` si todavía no tenés un servidor de correo definido.
-* Si se prefiere conectar a una base de dato local, fuera del entorno, vea el apartado [Conectar a una base de datos mongo local](#local-mongo)
+* Si se prefiere conectar a una base de datos local, fuera del entorno, vea el apartado [Conectar a una base de datos mongo local](#local-mongo)
 * Podés configurar DemocracyOS con cualquiera de las variables de entorno listadas acá: http://docs.democracyos.org/configuration.html
 * El puerto `27017` está expuesto para que puedas administrar la base de datos con algún cliente de MongoDB, por ejemplo con [Robomongo](https://robomongo.org/).
 * Todas las vistas personalizadas para Consulta Pública se encuentran en [`/ext`](ext). Siguiendo el mismo patrón de carpetas que [DemocracyOS/democracyos](https://github.com/DemocracyOS/democracyos).
@@ -124,17 +124,38 @@ Si cambia alguna dependencia del `/ext/package.json`, tiene que volver a buildea
 docker-compose up --build
 ```
 
+Si desea utilizar otro archivo de compose:
+
+```
+docker-compose -f docker-compose-otro.yml up
+```
+
 Para poder entrar al container de DemocracyOS:
 
 ```
 docker exec -it miconsultapublica bash
 ```
 
-Para poder entrar a la base de datos
+Para entrar a la base de datos
 
 ```
-docker exec -it miconsultapublica-mongo bash
+docker exec -it miconsultapublica-mongo mongo mi-consultapublica
 ```
+
+Para inspeccionar rápidamente la base de datos (dentro de la consola de mongo):
+```
+# enumerar tablas
+show tables
+# volcar tabla forums
+db.forums.find()
+# volcar solo ids, names y titles
+db.forums.find({}, {name:1, title:1})
+# buscar por id
+db.forums.find(ObjectId("5dbc5619a035c3000f2f1f45"))
+# buscar por nombre
+db.forums.find({name: 'un nombre'})
+```
+
 ## Conectar a una base de dato Mongo local
 
 Si lo prefiere, puede conectar la aplicacion a su mongo local. En primer lugar aseguresé que sea **Mongo 3.2**, si no, procure utilizar el container que se construye en el build del docker-compose.
