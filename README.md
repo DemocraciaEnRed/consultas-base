@@ -33,6 +33,8 @@ Antes que nada, están lxs autorxs de DemocracyOS, enumeradxs en su [CONTRIBUTOR
 
 Además, para esta versión modificada de la plataforma aportaron principalmente: [guillecro](https://github.com/guillecro) y [wencha](https://github.com/wencha).
 
+Si desean contactarse con nosotrxs por asuntos técnicos relativos a la plataforma pueden enviarnos un mail a [it@democracyos.io](mailto:it@democracyos.io).
+
 ## Licencia
 
 Consultas Digitales está disponible bajo la licencia [GNU General Public License v3.0](LICENSE)
