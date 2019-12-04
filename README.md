@@ -19,6 +19,15 @@ Esta plataforma fomenta la interacción entre las instituciones y la ciudadanía
 - [Extendiendo la plataforma](/docs/personalizacion.md)
 - [Deployment](/deployment/README.md)
 
+## Cómo contribuir
+Para contribuir primero deben hacer un _fork_ de este repositorio presionando en el botón de dicha acción, en la pantalla principal del [github del repositorio](https://github.com/DemocraciaEnRed/consultas-digitales). Una vez hecho el fork, clonarlo localmente, modificar el código, commitearlo y pushearlo.
+
+Finalmente solicitar un _pull request_ de dichos cambios hacia el código oficial. Para esto debemos presionar en _New pull request_ en la pantalla principal del github del repositorio, seleccionar su fork (tal vez tenga que presionar en _compare across forks_) y crear el pull request comentando un poco qué hacen sus modificaciones.
+
+Para reportar un error en el código basta con reportar un _issue_. Para esto, ir a la pestaña _Issues_ del github del repositorio, presionar _New issue_ y seguir las instrucciones descriptas para reportar el error.
+
+Al realizar cualquiera de estas acciones a nosotrxs nos llegará un mail y pronto le estaremos dando una devolución del pedido.
+
 ## Licencia
 
 Consultas Digitales está disponible bajo la licencia [GNU General Public License v3.0](LICENSE)
