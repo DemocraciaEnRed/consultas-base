@@ -29,6 +29,9 @@ Al realizar cualquiera de estas acciones a nosotrxs nos llegará un mail y pront
 
 Para poder contribuir en el codigo base de DemocracyOs, ir al repositorio [DemocracyOS/democracyos](https://github.com/DemocracyOS/democracyos).
 
+## Código de conducta
+Nuestro código de conducta, destinado a cualquier persona que desee acercarse y aportar al repositorio, está disponible en [español](CODIGO_DE_CONDUCTA.md) e [inglés](CODE_OF_CONDUCT.md).
+
 ## Autorxs
 Antes que nada, están lxs autorxs de DemocracyOS, enumeradxs en su [CONTRIBUTORS.md](https://github.com/DemocracyOS/app/blob/master/CONTRIBUTORS.md).
 
