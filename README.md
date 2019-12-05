@@ -23,6 +23,8 @@ Posteriormente solicitar un _pull request_ de dichos cambios hacia el código of
 
 Para reportar un error en el código basta con reportar un _issue_. Para esto, ir a la pestaña _Issues_ del github del repositorio, presionar _New issue_ y seguir las instrucciones descriptas para reportar el error.
 
+Preferimos el uso del __español__ en todos los mensajes de _commits_, _branches_ y comentarios en el código.
+
 Al realizar cualquiera de estas acciones a nosotrxs nos llegará un mail y pronto le estaremos dando una respuesta del pedido.
 
 Para poder contribuir en el codigo base de DemocracyOs, ir al repositorio [DemocracyOS/democracyos](https://github.com/DemocracyOS/democracyos).
