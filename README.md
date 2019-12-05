@@ -27,6 +27,8 @@ Para reportar un error en el código basta con reportar un _issue_. Para esto, i
 
 Al realizar cualquiera de estas acciones a nosotrxs nos llegará un mail y pronto le estaremos dando una respuesta del pedido.
 
+Para poder contribuir en el codigo base de DemocracyOs, ir al repositorio [DemocracyOS/democracyos](https://github.com/DemocracyOS/democracyos).
+
 ## Autorxs
 Antes que nada, están lxs autorxs de DemocracyOS, enumeradxs en su [CONTRIBUTORS.md](https://github.com/DemocracyOS/app/blob/master/CONTRIBUTORS.md).
 
