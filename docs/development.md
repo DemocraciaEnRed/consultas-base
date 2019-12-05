@@ -12,7 +12,7 @@ La aplicación utiliza las imagenes de [DemocracyOS 2.11.15](https://hub.docker.
 
 Es preferente trabajar en el entorno de desarrollo utilizando Docker Compose donde definimos las variables de entorno y los servicios con la que la aplicación trabaja.
 
-En el repositorio encontrará la siguiente plantilla en `docker-compose.yaml.example`. Pase este contenido a `docker-compose.yml` y utilice la plantilla como base. Opcionalmente puede crear un `docker-compose.override.yml` en su copia local del proyecto; este archivo será tomado automáticamente por el comando `docker-compose` (`docker-compose.yml` no será leído), y no molestará a git ya que se encuentra ignorado (en `.gitignore`).
+En el repositorio encontrará la siguiente plantilla en `docker-compose.yml.example`. Pase este contenido a `docker-compose.yml` y utilice la plantilla como base. Opcionalmente puede crear un `docker-compose.override.yml` en su copia local del proyecto; este archivo será tomado automáticamente por el comando `docker-compose` (`docker-compose.yml` no será leído), y no molestará a git ya que se encuentra ignorado (en `.gitignore`).
 
 La plantilla es la siguiente:
 
@@ -35,8 +35,8 @@ services:
       # - STAFF=hola@miemail.com,usuario@otroemail.com,otrousuario@nuevoemail.com
       - STAFF=hola@miemail.com
       # Logos
-      - LOGO=/ext/lib/site/home-multiforum/logo-header.svg \
-      - LOGO_MOBILE=/ext/lib/site/home-multiforum/logo-header.svg \
+      - LOGO=/ext/lib/site/home-multiforum/logo-header.png \
+      - LOGO_MOBILE=/ext/lib/site/home-multiforum/logo-header.png \
       # Organizacion
       - ORGANIZATION_EMAIL=miconsultapublica@midominio.com.ar
       - ORGANIZATION_NAME="Mi Consulta Pública"
@@ -49,21 +49,12 @@ services:
       - TWEET_TEXT="Estoy tratando de mejorar esta propuesta “{topic.mediaTitle}” ¡Participá vos también!"
       # Configuracion del mailer
       - NOTIFICATIONS_MAILER_EMAIL=miconsultapublica@midominio.com
-      - NOTIFICATIONS_MAILER_NAME="Mi consulta ṕública"
+      - NOTIFICATIONS_MAILER_NAME="Mi consulta pública"
       - NOTIFICATIONS_NODEMAILER={"host:"xxxxx.smtp.com","port":465,"secure":true,"auth":{"user":"xxxxxxxx","pass":"xxxxxxx"}} #Cambiar
       # El mail del que recibe los pedidos de verificación de cuentas
-      - VERIFY_USER_REQUEST_EMAIL=miadminconsultapublica@midominio.com
+      - VERIFY_USER_REQUEST_EMAIL=unmail@correo.com
       # Requerido: Genere un token para JWT
       - JWT_SECRET= #Cambiar
-      # Si desea activar Mi Argentina, descomente los siguientes puntos
-      # - CUSTOM_SIGNIN=true
-      # - OIDC_ISSUER= #Cambiar
-      # - OIDC_AUTH= #Cambiar
-      # - OIDC_TOKEN= #Cambiar
-      # - OIDC_USER= #Cambiar
-      # - OIDC_CLIENT_ID= #Cambiar
-      # - OIDC_CLIENT_SECRET= #Cambiar
-      # - OIDC_CALLBACK= #Cambiar
     links:
       - mongo 
     ports:
@@ -75,6 +66,7 @@ services:
       - ./dos-override/models/comment.js:/usr/src/lib/models/comment.js
       - ./dos-override/api-v2/db-api/comments/index.js:/usr/src/lib/api-v2/db-api/comments/index.js
       - ./dos-override/api-v2/db-api/comments/scopes.js:/usr/src/lib/api-v2/db-api/comments/scopes.js
+      - ./dos-override/api-v2/db-api/users/scopes.js:/usr/src/lib/api-v2/db-api/users/scopes.js
     tty: true
 
   mongo:
@@ -84,7 +76,12 @@ services:
       - 27017:27017
     volumes:
       - ./tmp/db:/data/db
-
+      
+#  mailserver:
+#    image: namshi/smtp
+#    environment:
+#      - GMAIL_USER=mi-usuario@gmail.com
+#      - GMAIL_PASSWORD=mi-contraseña-que-no-debo-publicar
 ```
 
 ##### Notas
