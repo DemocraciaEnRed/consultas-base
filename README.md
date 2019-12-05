@@ -45,4 +45,4 @@ Si desean contactarse con nosotrxs por asuntos técnicos relativos a la platafor
 - [Opinión Pública](https://opinionpublica.funpublica.com.ar/) - Fundación Confianza Pública: consulta sobre leyes de integridad
 
 ## Licencia
-Consultas Digitales está disponible bajo la licencia [GNU General Public License v3.0](LICENSE)
+Consultas Digitales está disponible bajo la licencia [GNU General Public License v3.0](LICENSE.md).
