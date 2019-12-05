@@ -27,7 +27,7 @@ Preferimos el uso del __español__ en todos los mensajes de _commits_, _branches
 
 Al realizar cualquiera de estas acciones a nosotrxs nos llegará un mail y pronto le estaremos dando una respuesta del pedido.
 
-Para poder contribuir en el codigo base de DemocracyOs, ir al repositorio [DemocracyOS/democracyos](https://github.com/DemocracyOS/democracyos).
+Para poder contribuir en el codigo base de DemocracyOS, ir al repositorio [DemocracyOS/democracyos](https://github.com/DemocracyOS/democracyos).
 
 ## Código de conducta
 Nuestro código de conducta, destinado a cualquier persona que desee acercarse y aportar al repositorio, está disponible tanto en [español](CODIGO_DE_CONDUCTA.md) como en [inglés](CODE_OF_CONDUCT.md).
