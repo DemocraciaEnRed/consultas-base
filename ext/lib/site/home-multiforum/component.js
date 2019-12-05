@@ -11,7 +11,7 @@ import Search from './search/component'
 
 class HomeMultiForum extends Component {
   constructor (props) {
-    super(props)
+    super(props) 
 
     this.state = {
       page: 0,
@@ -95,7 +95,7 @@ class HomeMultiForum extends Component {
           <div className='jumbotron_body'>
             <div className='container'>
               <img
-                src="/ext/lib/site/home-multiforum/logo_consulta-publica.svg"
+                src="/ext/lib/site/home-multiforum/logo-grande-consultas-digitales.png"
                 alt="Logo"
                 width="270px"
               />
