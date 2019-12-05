@@ -9,7 +9,7 @@ Esta herramienta favorece la generación de espacios de colaboración entre el E
 
 Esta plataforma fomenta la interacción entre las instituciones y la ciudadanía, sometiendo a consideración temas de interés público mediante acciones que permiten informar y recoger los distintos puntos de vista, perspectivas y opiniones.
 
-## Indice
+## Documentación técnica
 - [Manual instructivo para usuarios](/docs/manual-usuarios.md)
 - [Manual instructivo para administradores](/docs/manual-admin.md)
 - [Guía de instalación](/docs/development.md)
