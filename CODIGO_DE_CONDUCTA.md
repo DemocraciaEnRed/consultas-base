@@ -1,4 +1,4 @@
-# Código de conducta para lx contribuyente
+# Código de Conducta para lx Contribuyente
 
 Como contribuyentes y mantenedorxs de este proyecto, y en el interés de fomentar una comunidad abierta y acogedora, nos comprometemos a respetar a todas las personas que contribuyen a través del reporte de errores (_issues_), solicitudes de nuevas características, actualización de la documentación, presentación de solicitudes de _pull requests_ o parches, y otras actividades.
 
