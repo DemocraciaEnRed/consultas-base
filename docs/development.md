@@ -2,20 +2,19 @@
 
 Consultas Digitales requiere **Docker** y **Docker compose**. Se probó exitósamente con las versiones **19.03.5** y **1.24.0** de las mismas (sobre un **Ubuntu 18.04**).
 
-Una vez que verifique que cuenta con estas dependencias, haga un **FORK** y clone su nuevo repositorio.
+Una vez que verifique que cuenta con estas dependencias, haga un _fork_ y clone localmente su nuevo repositorio.
 
 ## Variables de entorno
 
 En primer lugar debemos adecuar el `docker-compose.yml`
 
-La aplicación utiliza [DemocracyOS 2.11.15](https://hub.docker.com/r/democracyos/democracyos) y requiere **Mongo 3.2**
+La aplicación utiliza las imagenes de [DemocracyOS 2.11.15](https://hub.docker.com/r/democracyos/democracyos) y **Mongo 3.2**
 
-Es preferente trabajar en el entorno de desarrollo utilizando docker-compose donde definimos las variables de entorno y los servicios con la que la aplicación trabaja, en este caso, mongo 3.2
+Es preferente trabajar en el entorno de desarrollo utilizando Docker Compose donde definimos las variables de entorno y los servicios con la que la aplicación trabaja.
 
-Recomendamos ver el siguiente `docker-compose.yml` a continuacion para usarlo como base donde podrá editarlo para dar marcha su instancia de desarrollo local.
+En el repositorio encontrará la siguiente plantilla en `docker-compose.yaml.example`. Pase este contenido a `docker-compose.yml` y utilice la plantilla como base. Opcionalmente puede crear un `docker-compose.override.yml` en su copia local del proyecto; este archivo será tomado automáticamente por el comando `docker-compose` (`docker-compose.yml` no será leído), y no molestará a git ya que se encuentra ignorado (en `.gitignore`).
 
-En el repositorio encontrará la siguiente plantilla en `docker-compose.yaml.example`. Pase el contenido a `docker-compose.yml` y utilice la plantilla como base.
-
+La plantilla es la siguiente:
 
 ```yaml
 version: '3'
