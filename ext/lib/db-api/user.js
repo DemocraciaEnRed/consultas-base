@@ -233,44 +233,44 @@ exports.expose.ordinary.keys = [
 exports.requestVerify = function requestVerify (id, fn) {
   log('Requesting verify for User %s', id)
   const { VERIFY_USER_REQUEST_EMAIL } = process.env
-  
+
   if (!VERIFY_USER_REQUEST_EMAIL){
     log('Must provide environment variable VERIFY_USER_REQUEST_EMAIL to send this mail')
     fn({status:500, error:'Bad server configuration. Check error logs.'})
   }
-  
+
   this.get(id, function (err, user) {
     const {protocol, host} = config
     const verifyConfigUrl = `${protocol}://${host}${urlBuilder.for('settings.user-badges')}`
-    
-    let mailSubject = 'Consulta Pública - Solicitud de verificación de cuenta'
+
+    let mailSubject = `Consultas Digitales - Solicitud de verificación de cuenta`
     let mailBodyHtml = `
-      <p>El usuario <strong>${user.displayName}</strong> solicitó la verificación de su cuenta en la plataforma Consulta Pública.</p>
+      <p>El usuario <strong>${user.displayName}</strong> solicitó la verificación de su cuenta en la plataforma Consultas Digitales.</p>
       <p>Podés contactarlo a su correo electrónico <a href="mailto:${user.email}">${user.email}</a> para solicitar información.</p>
       <p>Para verificar su cuenta entrá a la sección de <a href="${verifyConfigUrl}">Gestión de usuarios</a> de la plataforma, buscá el usuario y clickeá en <em>Verificar Usuario.</em></p>
     `
     // NOTA: el mailer puede enviar "bien" el mail pero el smtp server no, entonces nunca sale el mail y no nos enteramos
     // Eso solo se puede ver en los logs de smtp server
-    
+
     notifier.mailer.send({
         to: VERIFY_USER_REQUEST_EMAIL,
         subject: mailSubject,
         html: mailBodyHtml
-      }).then(() => { 
+      }).then(() => {
         log('Notifier mailer send OK')
         fn(null, user)
-      }).catch((err) => { 
+      }).catch((err) => {
         log('Notifier mailer send error: %j', err)
         fn(err)
       })
   })
-  
+
   return this
 }
 
 exports.verifyUser = function verifyUser (id) {
   log('Verifying User with id %s', id)
-  
+
   return new Promise((resolve, reject) => {
     User
       .findOneAndUpdate({_id : id}, { $set: { 'extra.verified': true } }, function (err, user) {
@@ -281,24 +281,24 @@ exports.verifyUser = function verifyUser (id) {
         log('Verify User OK')
         const {protocol, host} = config
         const homeUrl = `${protocol}://${host}`
-      
-        let mailSubject = 'Consulta Pública - Cuenta verificada'
+
+        let mailSubject = `Consultas Digitales - Cuenta verificada`
         let mailBodyHtml = `
           <p>¡Su cuenta ha sido verificada con éxito!</p>
-          <p>Puede volver a Consulta Pública haciendo click <a href="${homeUrl}">acá</a></p>
+          <p>Puede volver a Consultas Digitales haciendo click <a href="${homeUrl}">acá</a></p>
         `
-        
+
         // NOTA: el mailer puede enviar "bien" el mail pero el smtp server no, entonces nunca sale el mail y no nos enteramos
         // Eso solo se puede ver en los logs de smtp server
-    
+
         notifier.mailer.send({
             to: user.email,
             subject: mailSubject,
             html: mailBodyHtml
-          }).then(() => { 
+          }).then(() => {
             log('Notifier mailer send OK')
             resolve(1)
-          }).catch((err) => { 
+          }).catch((err) => {
             log('Notifier mailer send error: %j', err)
             resolve(1)
           })
@@ -308,8 +308,8 @@ exports.verifyUser = function verifyUser (id) {
 
 exports.editExtra = function edit (id, extras) {
   log('Updating extra fields for user %s', id)
-  
-  return new Promise((resolve, reject) => {    
+
+  return new Promise((resolve, reject) => {
     Object.keys(extras).forEach((key) => {
       if (!key.startsWith('extra.'))
         return reject('Can\'t update non-extra fields')
@@ -322,6 +322,6 @@ exports.editExtra = function edit (id, extras) {
       }
       resolve(user)
     })
-    
+
   })
 }

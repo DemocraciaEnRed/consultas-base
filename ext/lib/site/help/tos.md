@@ -2,11 +2,11 @@
 ​
 ### Descripción
 
-Los siguientes Términos y Condiciones regulan el uso de la Plataforma de Consulta Pública (en adelante, el “Sitio Web”) en donde se brinda información sobre  proyectos de ley y propuestas de los organismos de la Administración Pública.
+Los siguientes Términos y Condiciones regulan el uso de la Plataforma de Consultas Digitales (en adelante, el “Sitio Web”) en donde se brinda información sobre  proyectos de ley y propuestas de los organismos de la Administración Pública.
 
 El registro y uso del “Sitio Web” por parte de un usuario (en adelante el/los “Usuario/s”) indica la aceptación absoluta de los Términos y Condiciones presentes y de la Política de Privacidad.
 
-La plataforma de Consulta Pública es un sitio web desarrollado por el Ministerio de Modernización de la Nación (en adelante el “Administrador”) que promueve la participación ciudadana en el diseño e implementación de políticas públicas. Esta herramienta favorece la generación de espacios de colaboración entre el Estado, la sociedad civil y el sector privado, para co-diseñar y co-producir valor público.
+La plataforma de Consultas Digitales es un sitio web desarrollado por el Ministerio de Modernización de la Nación (en adelante el “Administrador”) que promueve la participación ciudadana en el diseño e implementación de políticas públicas. Esta herramienta favorece la generación de espacios de colaboración entre el Estado, la sociedad civil y el sector privado, para co-diseñar y co-producir valor público.
 ​
 ## Inscripción en la plataforma web
 
