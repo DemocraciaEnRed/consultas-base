@@ -109,7 +109,7 @@ La aplicación se instala en formato de docker-compose, por defecto se levantan 
 Tanto el docker-compose como las configuraciones y archivos de MongoDB se almacenan como volúmenes de Docker en el path de instalación, una instalación por defecto se ve de la siguiente forma:
 
 ```bash
-$ cd /opt/consulta-publica && tree
+$ cd /opt/consultas-digitales && tree
 .
 ├── docker-compose.yaml
 ├── volumenes
@@ -127,7 +127,7 @@ deploy:
   hostname: consulta.ejemplo.org
 
 docker:
-  IMAGE: democraciaenred/consulta-publica:development
+  IMAGE: democraciaenred/consultas-digitales:development
   # Resto de variables...
 ```
 

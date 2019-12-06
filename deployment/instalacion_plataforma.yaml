@@ -59,7 +59,7 @@
 
     - name: Default para directorio de instalacion
       set_fact:
-        path_instalacion: /opt/consulta-publica
+        path_instalacion: /opt/consultas-digitales
       when: deploy['path_instalacion'] == None
 
     - name: Crear directorio de instalacion
