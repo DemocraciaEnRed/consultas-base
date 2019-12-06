@@ -100,7 +100,7 @@ class HomeMultiForum extends Component {
                 width="270px"
               />
               <p className='lead highlight'>
-                Construyamos una Argentina más abierta, transparente y colaborativa.
+                Construyamos una país más abierto, transparente y colaborativo.
               </p>
               <button
                 className='btn btn-primary'
@@ -113,7 +113,7 @@ class HomeMultiForum extends Component {
         </section>
         <div className='lead-paragraph'>
           <p>
-            <span className="skyblue">Consulta Pública</span> es un canal de diálogo y debate que permite la interacción entre el gobierno y la comunidad,
+            <span className="skyblue">Consultas Digitales</span> es un canal de diálogo y debate que permite la interacción entre el gobierno y la comunidad,
             <br />
             promueve la participación ciudadana y ayuda a fortalecer la democracia.
           </p>

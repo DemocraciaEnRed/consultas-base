@@ -253,7 +253,7 @@ export default class EditForum extends Component {
               <div className='form-group clearfix'>
                 <input
                   type='text'
-                  placeholder='Ministerio de Modernización'
+                  placeholder='Democracia en Red'
                   value={owner}
                   onChange={this.handleChangeExtra('owner')} />
               </div>
@@ -263,7 +263,7 @@ export default class EditForum extends Component {
               <div className='form-group clearfix'>
                 <input
                   type='text'
-                  placeholder='https://www.argentina.gob.ar/modernizacion'
+                  placeholder='https://democraciaenred.org/'
                   value={ownerUrl}
                   onChange={this.handleChangeExtra('ownerUrl')} />
               </div>
