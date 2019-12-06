@@ -1,9 +1,9 @@
 # Manual instructivo para administradores
 
 * Introducción 
-* ¿Qué es [Consulta Pública](https://consultapublica.argentina.gob.ar/)?
-* ¿Qué es [Consulta Pública](https://consultapublica.argentina.gob.ar) distribuible?
-* ¿Cómo hago para implementar una versión de Consulta Pública?
+* ¿Qué es [Consultas Digitales](https://consultapublica.democraciaenred.org/)?
+* ¿Qué es [Consultas Digitales](https://consultapublica.democraciaenred.org) distribuible?
+* ¿Cómo hago para implementar una versión de Consultas Digitales?
 * ¿Cómo está estructurada la plataforma?
 * ¿Para qué sirven los ejes?
 * ¿Cómo administrar mi plataforma y sus consultas?
@@ -13,22 +13,22 @@
 
 
 ## Introducción 
-Este **manual instructivo** está destinado a los administradores de organismos subnacionales que implementen una versión de la plataforma Consulta Pública, suministrada por la Secretaria de Modernización.
-## ¿Qué es [Consulta Pública](https://consultapublica.argentina.gob.ar/)?
-Consulta Pública es un canal de diálogo online y debate que permite la interacción entre el gobierno y la consulta, promueve la participación ciudadana y ayuda a fortalecer la democracia.
+Este **manual instructivo** está destinado a los administradores de organismos que implementen una versión de la plataforma Consultas Digitales.
+## ¿Qué es [Consultas Digitales](https://consultapublica.democraciaenred.org/)?
+Consultas Digitales es un canal de diálogo online y debate que permite la interacción entre el gobierno y la consulta, promueve la participación ciudadana y ayuda a fortalecer la democracia.
 
-En Consulta Pública se abren temas e iniciativas a la ciudadanía, para posibilitar la participación a través de comentarios y opiniones con el objetivo de mejorar las políticas implementadas. A esta instancia de participación la llamamos **“Consulta Pública”.**
+En Consultas Digitales se abren temas e iniciativas a la ciudadanía, para posibilitar la participación a través de comentarios y opiniones con el objetivo de mejorar las políticas implementadas. A esta instancia de participación la llamamos **“Consultas Digitales”.**
 
 En la plataforma se pueden crear múltiples consultas digitales por un plazo determinado sobre las temáticas que se quieran abrir a consideración.
-## ¿Qué es [Consulta Pública](https://consultapublica.argentina.gob.ar) distribuible?
-Es una versión de la plataforma Consulta Pública que tiene por objetivo ser distribuida a distintos organismos subnacionales. Su implementación en estas áreas permite la creación de canal digital de diálogo entre gobierno y ciudadanía.
+## ¿Qué es [Consultas Digitales](https://consultapublica.democraciaenred.org) distribuible?
+Es una versión de la plataforma Consultas Digitales que tiene por objetivo ser distribuida a distintos organismos subnacionales. Su implementación en estas áreas permite la creación de canal digital de diálogo entre gobierno y ciudadanía.
 
-Esta Plataforma tiene un desarrollo basado en la adaptación del código abierto **DemocracyOS,** diseñada para informar, debatir y votar propuestas públicas hacia la construcción de una democracia adaptada al siglo XXI. Este código fue suministrado por Democracia en Red y se encuentra a disposición de la Secretaría de Modernización.
-## ¿Cómo hago para implementar una versión de Consulta Pública?
-Para tener una versión de Consulta Pública, por favor escribinos a gobiernoabierto@modernizacion.gob.ar
+Esta Plataforma tiene un desarrollo basado en la adaptación del código abierto **DemocracyOS,** diseñada para informar, debatir y votar propuestas públicas hacia la construcción de una democracia adaptada al siglo XXI. Este código fue suministrado por Democracia en Red..
+## ¿Cómo hago para implementar una versión de Consultas Digitales?
+Para tener una versión de Consultas Digitales, por favor escribinos a it@democracyos.io
 
 --------------------------------------------------------------------
-Ya sos **organizador** de tu plataforma de Consulta Pública. Esto quiere decir que sos el responsable de crear las consultas. También podés asignar a otras áreas la posibilidad de gestionar consultas dentro de la plataforma.
+Ya sos **organizador** de tu plataforma de Consultas Digitales. Esto quiere decir que sos el responsable de crear las consultas. También podés asignar a otras áreas la posibilidad de gestionar consultas dentro de la plataforma.
 
 Esta guía te ayudará a:
 
@@ -40,7 +40,7 @@ Esta guía te ayudará a:
     
 -  asignar diferentes roles o **privilegios** a los usuarios.
 
-Continuá leyendo para saber cómo utilizar la Plataforma Consulta Pública.
+Continuá leyendo para saber cómo utilizar la Plataforma Consultas Digitales.
 
 ## ¿Cómo está estructurada la plataforma?
 
@@ -144,7 +144,7 @@ La consulta, una vez cargada, debe ser **guardada**. Existe la opción de “pub
 
 ![Imagen](/docs/admin-manual/image13.png?raw=true)
 
-*Permisos*: existen distintos tipos de permisos en Consulta Pública, según los **privilegios** que posea. En esta opción, el *admin* agregar o modificar organizadores y administradores.
+*Permisos*: existen distintos tipos de permisos en Consultas Digitales, según los **privilegios** que posea. En esta opción, el *admin* agregar o modificar organizadores y administradores.
 
  - **organizador:** es único (superadmin) y nadie puede quitarle permisos. Posee permisos para realizar todas las acciones posibles. Es el encargado de crear "las consultas".
 -  **administradores:** pueden otorgar permisos a otros usuarios, editar opciones y editar contenido (crear y editar ejes, etc).
