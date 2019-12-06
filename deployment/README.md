@@ -1,12 +1,12 @@
 # Deployment
 
-Esta guía presenta los pasos necesarios para poder hacer un deployment de consulta pública en plataformas basadas en GNU/Linux. La herramienta de aprovisionamiento seleccionada es [Ansible](https://www.ansible.com). Todos estos pasos se ejecutan desde el equipo del administrador. _Work in progress_.
+Esta guía presenta los pasos necesarios para poder hacer un deployment de consultas digitales en plataformas basadas en GNU/Linux. La herramienta de aprovisionamiento seleccionada es [Ansible](https://www.ansible.com). Todos estos pasos se ejecutan desde el equipo del administrador. _Work in progress_.
 
 ## Pre-requisitos
 
 **Imágen de Docker**
 
-El sistema de consulta pública se distribuye e instala generando una imágen de [Docker](https://www.docker.com). Es necesario que al momento de seguir esta guía el usuario cuente con una imágen disponible en el [registro oficial de Docker (Docker Hub)](https://hub.docker.com). Los pasos necesarios escapan al foco de esta guía pero pueden resumirse como:
+El sistema de consultas digitales se distribuye e instala generando una imágen de [Docker](https://www.docker.com). Es necesario que al momento de seguir esta guía el usuario cuente con una imágen disponible en el [registro oficial de Docker (Docker Hub)](https://hub.docker.com). Los pasos necesarios escapan al foco de esta guía pero pueden resumirse como:
 * Crear una cuenta en [Docker Hub](https://hub.docker.com).
 * Crear un repositorio en [Docker Hub](https://hub.docker.com).
 * Pushear la imágen desde el entorno del desarrollador.
@@ -19,7 +19,7 @@ Los distintos _playbooks de Ansible_ requieren acceso por SSH al servidor de des
 
 **Ansible**
 
-Ansible es una herramienta de aprovisionamiento que permite aplicar planes de ejecución llamados _playbooks_ en los cuales se definen una serie de pasos a realizar en uno o más hosts. En este caso utilizamos Ansible para definir la instalación de la plataforma de consulta pública, formalizando y automatizando el proceso. La guía oficial de instalación se encuentra [aquí](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html) aunque es muy probable que se encuentre ya disponible en los repositorios oficiales de las distintas distribuciones:
+Ansible es una herramienta de aprovisionamiento que permite aplicar planes de ejecución llamados _playbooks_ en los cuales se definen una serie de pasos a realizar en uno o más hosts. En este caso utilizamos Ansible para definir la instalación de la plataforma de consultas digitales, formalizando y automatizando el proceso. La guía oficial de instalación se encuentra [aquí](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html) aunque es muy probable que se encuentre ya disponible en los repositorios oficiales de las distintas distribuciones:
 
 * Versión mínima requerida: 2.3.
 
@@ -103,7 +103,7 @@ La información sobre las posibles variables y sus valores puede obtenerse en el
 
 La aplicación se instala en formato de docker-compose, por defecto se levantan tres contenedores:
 * [Traefik](https://traefik.io): es un proxy/balanceador de carga orientado a entornos cloud. Es el que realiza la terminación TLS cuando se utiliza HTTPS y hace las veces de proxy reverso contra la aplicación.
-* Aplicación de Consulta Pública: la aplicación indicada en la variable `IMAGE` de `variables.yaml`.
+* Aplicación de Consultas Digitales: la aplicación indicada en la variable `IMAGE` de `variables.yaml`.
 * MongoDB: en caso de no utilizar una base de datos externa, el deployment levanta una instancia de MongoDB 3.2 en un contenedor.
 
 Tanto el docker-compose como las configuraciones y archivos de MongoDB se almacenan como volúmenes de Docker en el path de instalación, una instalación por defecto se ve de la siguiente forma:

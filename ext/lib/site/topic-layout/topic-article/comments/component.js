@@ -38,7 +38,7 @@ export class Comments extends Component {
               (
                 <div className="alert alert-info" role="alert" style={{marginTop: '10px'}}>
                   <span className="icon-info" style={{marginRight: '5px'}}></span>
-                  <span>La Consulta Pública  ha finalizado.</span>
+                  <span>La Consulta Pública ha finalizado.</span>
                   <br /><span><Link to='/'>Te invitamos a conocer otras consultas y participar.</Link></span>
                 </div>
               )
