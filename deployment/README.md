@@ -153,7 +153,7 @@ deploy:
   https_path_llave: /home/ubuntu/server.key
 
 docker:
-  IMAGE: democraciaenred/consulta-publica:development
+  IMAGE: democraciaenred/consultas-digitales:development
   # Resto de variables...
 ```
 
@@ -179,7 +179,7 @@ deploy:
   https_lets_encrypt_staging: true
 
 docker:
-  IMAGE: democraciaenred/consulta-publica:development
+  IMAGE: democraciaenred/consultas-digitales:development
   # Resto de variables...
 ```
 
