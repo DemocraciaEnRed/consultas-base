@@ -12,7 +12,7 @@ Esta plataforma fomenta la interacción entre las instituciones y la ciudadanía
 ## Documentación técnica
 - [Manual instructivo para usuarios](/docs/manual-usuarios.md)
 - [Manual instructivo para administradores](/docs/manual-admin.md)
-- [Guía de instalación](/docs/development.md)
+- [Guía de instalación para desarrolladores](/docs/development.md)
 - [Extendiendo la plataforma](/docs/personalizacion.md)
 - [Deployment](/deployment/README.md)
 
