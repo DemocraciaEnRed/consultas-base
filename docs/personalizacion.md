@@ -1,12 +1,16 @@
 # Extendiendo la plataforma
 
-Al ser una "extension" de DemocracyOS, mucho del código viene por el lado de la plataforma base. Para eso, es recomendable tambien tener el codigo de DemocracyOS a mano por si existen api endpoints o vistas que necesite consultar.
+Al ser una "extension" de DemocracyOS, mucho del código viene por el lado de esta plataforma base. Para eso, es muy recomendable tener el codigo fuente de DemocracyOS a mano para poder ver cómo funcionan partes del código de su interes y entender el flujo de datos a la perfección.
 
-Esta extension agrega otros api endpoints y vistas que complementan a DemocracyOS y permiten la correcta operacion de la plataforma.
+Esta extension agrega otros API endpoints y vistas que complementan a DemocracyOS y permiten la correcta operacion de la plataforma.
 
 Supuestamente todo lo que usted debe modificar (si es necesario) existira bajo la carpeta `/ext`
 
-Luego, siguiendo la estructura de DemocracyOS, se tiene:
+En última instancia, de ser necesario, puede agregar una copia de los archivos originales de DemocracyOS modificados a su antojo en la carpeta `dos-overrides`, respetando la estructura de directorios original. Estos archivos pisarán a los de DemocracyOS bajo la carpeta `lib`. Esta es la forma más directa (y peligrosa) de "editar" el código fuente base de DemocracyOS. Por ejemplo, si quiere editar el archivo original ubicado en `lib/models/comment.js`, tendría que copiar el original a `dos-overrides/models/comment.js` y modificarlo como usted quiera.
+
+---
+
+Siguiendo la estructura de DemocracyOS, se tiene:
 
 * Todo lo que sea el sitio web, bajo `/ext/site`
 * Todo lo que sea el panel de admin, bajo `/ext/admin`
