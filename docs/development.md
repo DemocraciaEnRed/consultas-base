@@ -2,7 +2,7 @@
 
 ## Docker
 
-La forma más fácil de correr Consultas Digitales es con **Docker** y **Docker compose**. Se probó exitósamente con las versiones **19.03.5** y **1.24.0** de las mismas, sobre un **Ubuntu 18.04**. Si quiere instalar la plataforma localmente, puede saltar al [respectivo apéndice](#instalación-directa).
+La forma más fácil de correr Consultas Digitales es con **Docker** y **Docker compose**. Se probó exitósamente con las versiones **19.03.5** y **1.24.0** de las mismas, sobre un **Ubuntu 18.04**. Si quiere instalar la plataforma localmente, sin Docker, puede ver el apartado [Instalación directa](#instalación-directa).
 
 Una vez que verifique que cuenta con estas dependencias, haga un _fork_ de este repositorio y clónelo localmente.
 
@@ -222,11 +222,12 @@ De forma breve se puede resumir en:
 
 - Clonar el código de DemocracyOS
 - Ubicarse dentro del mismo y hacer `make packages`
-- Agregar algún mail de staff que será lx admin. Crear el archivo `config/development.json` con contenido: `{ "staff": ["unmail@elmail.com"] }`
-- Crear una base de datos mongo (por ejemplo con docker: `docker run -p 27017:27017 --name mongodb mongo:3.2`)
-- Correr el script de `gulp` build-watch-serve haciendo `gulp bws`
+- Agregar algún mail de staff que será lx admin. Para esto crear el archivo `config/development.json` con contenido:   
+`{ "staff": ["unmail@elmail.com"] }`   
+- Levantar una base de datos mongo (por ejemplo con docker: `docker run -p 27017:27017 --name mongodb mongo:3.2`)
+- Correr el script build-watch-serve de `gulp` haciendo `gulp bws`
 - Ir a [http://localhost:3000](http://localhost:3000), registrar su cuenta con el mail de staff y entrar (no hace falta validar el mail)
 
-Se requiere la versión de `node` 6.x.x para correr la plataforma. Recomendamos usar `nvm` para cambiar fácilmente entre una versión y otra de node. Si tenemos esta herramienta instalada, haríamos `nvm install lts/boron` (que es la versión 6.17.1) para cambiar a la versión válida.
+Se requiere la versión de `node` 6.x.x para correr la plataforma. Recomendamos usar `nvm` para cambiar fácilmente entre una versión y otra de node. Si tenemos esta herramienta instalada, haríamos `nvm install lts/boron` (que es la versión 6.17.1) para cambiar a una versión válida.
 
 Si no tiene `gulp` instalado puede instalarlo haciendo `npm install -g gulp`.
