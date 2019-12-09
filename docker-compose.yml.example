@@ -43,11 +43,6 @@ services:
     volumes:
       - ./ext/lib:/usr/src/ext/lib
       - ./public:/usr/src/public
-      # Forced overrides of DemocracyOs
-      - ./dos-override/models/comment.js:/usr/src/lib/models/comment.js
-      - ./dos-override/api-v2/db-api/comments/index.js:/usr/src/lib/api-v2/db-api/comments/index.js
-      - ./dos-override/api-v2/db-api/comments/scopes.js:/usr/src/lib/api-v2/db-api/comments/scopes.js
-      - ./dos-override/api-v2/db-api/users/scopes.js:/usr/src/lib/api-v2/db-api/users/scopes.js
     tty: true
 
   mongo:

@@ -2,10 +2,7 @@ FROM democracyos/democracyos:2.11.15
 
 MAINTAINER Democracia en Red <it@democracyos.io>
 
-COPY ./dos-override/models/comment.js /usr/src/lib/models/comment.js
-COPY ./dos-override/api-v2/db-api/comments/index.js /usr/src/lib/api-v2/db-api/comments/index.js
-COPY ./dos-override/api-v2/db-api/comments/scopes.js /usr/src/lib/api-v2/db-api/comments/scopes.js
-COPY ./dos-override/api-v2/db-api/users/scopes.js /usr/src/lib/api-v2/db-api/users/scopes.js
+COPY ["dos-override", "/usr/src/lib"]
 
 ENV LOCALE=es \
   AVAILABLE_LOCALES=es,en \
