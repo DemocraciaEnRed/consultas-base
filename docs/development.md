@@ -62,11 +62,6 @@ services:
     volumes:
       - ./ext/lib:/usr/src/ext/lib
       - ./public:/usr/src/public
-      # Forced overrides of DemocracyOs
-      - ./dos-override/models/comment.js:/usr/src/lib/models/comment.js
-      - ./dos-override/api-v2/db-api/comments/index.js:/usr/src/lib/api-v2/db-api/comments/index.js
-      - ./dos-override/api-v2/db-api/comments/scopes.js:/usr/src/lib/api-v2/db-api/comments/scopes.js
-      - ./dos-override/api-v2/db-api/users/scopes.js:/usr/src/lib/api-v2/db-api/users/scopes.js
     tty: true
 
   mongo:
@@ -217,7 +212,3 @@ Posteriormente, cambiar las variables de entorno correspondientes del contenedor
  ```
  
  Notar que si bien la conexión a este servidor SMTP no está cifrada, la conexión del servidor SMTP a Gmail sí lo está.
-  
-## Extendiendo los modelos de la BBDD o su API
-
-Para hacer esto debes copiar los archivos originales de DoS y agregarlos en la carpeta `dos-overrides`, bajo la misma ruta. Posteriormente incluírlos en `volumes` en el `docker-compose.yml`.
