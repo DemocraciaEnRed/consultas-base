@@ -1,10 +1,12 @@
 # Guía de instalación
 
-Consultas Digitales requiere **Docker** y **Docker compose**. Se probó exitósamente con las versiones **19.03.5** y **1.24.0** de las mismas (sobre un **Ubuntu 18.04**).
+## Docker
 
-Una vez que verifique que cuenta con estas dependencias, haga un _fork_ y clone localmente su nuevo repositorio.
+La forma más fácil de correr Consultas Digitales es con **Docker** y **Docker compose**. Se probó exitósamente con las versiones **19.03.5** y **1.24.0** de las mismas, sobre un **Ubuntu 18.04**. Si quiere instalar la plataforma localmente, puede saltar al [respectivo apéndice](#instalación-directa).
 
-## Variables de entorno
+Una vez que verifique que cuenta con estas dependencias, haga un _fork_ de este repositorio y clónelo localmente.
+
+### Variables de entorno
 
 En primer lugar debemos adecuar el `docker-compose.yml`
 
@@ -101,7 +103,7 @@ Puede tardar un rato largo en buildear. Cuando haya terminado y si todo sale bie
 Para entrar a la aplicacion a [http://localhost:3000](http://localhost:3000)
 
 
-## Comandos utiles
+### Comandos utiles
 
 Para abrir el server local
 
@@ -147,7 +149,7 @@ db.forums.find(ObjectId("5dbc5619a035c3000f2f1f45"))
 db.forums.find({name: 'un nombre'})
 ```
 
-## Conectar a una base de dato Mongo local
+### Conectar a una base de dato Mongo local
 
 Si lo prefiere, puede conectar la aplicacion a su mongo local. En primer lugar aseguresé que sea **Mongo 3.2**, si no, procure utilizar el container que se construye en el build del docker-compose.
 
@@ -190,7 +192,7 @@ Por ultimo debemos comentar el servicio de mongo, para que no se construya el co
   #     - ./tmp/db:/data/db
 ```
 
-## Conectar a un servidor SMTP local
+### Conectar a un servidor SMTP local
 
 Para esto podemos usar la imagen [namshi/smtp](https://hub.docker.com/r/namshi/smtp).
 
@@ -212,3 +214,19 @@ Posteriormente, cambiar las variables de entorno correspondientes del contenedor
  ```
  
  Notar que si bien la conexión a este servidor SMTP no está cifrada, la conexión del servidor SMTP a Gmail sí lo está.
+
+## Instalación directa
+Para esto debe seguir las guías oficiales de DemocracyOS sobre [instalación](https://docs.democracyos.org/install.html) y [desarrollo](https://docs.democracyos.org/develop/).
+
+De forma breve se puede resumir en:
+
+- Clonar el código de DemocracyOS
+- Ubicarse dentro del mismo y hacer `make packages`
+- Agregar algún mail de staff que será lx admin. Crear el archivo `config/development.json` con contenido: `{ "staff": ["unmail@elmail.com"] }`
+- Crear una base de datos mongo (por ejemplo con docker: `docker run -p 27017:27017 --name mongodb mongo:3.2`)
+- Correr el script de `gulp` build-watch-serve haciendo `gulp bws`
+- Ir a [http://localhost:3000](http://localhost:3000), registrar su cuenta con el mail de staff y entrar (no hace falta validar el mail)
+
+Se requiere la versión de `node` 6.x.x para correr la plataforma. Recomendamos usar `nvm` para cambiar fácilmente entre una versión y otra de node. Si tenemos esta herramienta instalada, haríamos `nvm install lts/boron` (que es la versión 6.17.1) para cambiar a la versión válida.
+
+Si no tiene `gulp` instalado puede instalarlo haciendo `npm install -g gulp`.
