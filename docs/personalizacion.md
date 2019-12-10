@@ -1,12 +1,16 @@
 # Extendiendo la plataforma
 
-Al ser una "extension" de DemocracyOS, mucho del código viene por el lado de la plataforma base. Para eso, es recomendable tambien tener el codigo de DemocracyOS a mano por si existen api endpoints o vistas que necesite consultar.
+Al ser una "extension" de DemocracyOS, mucho del código viene por el lado de esta plataforma base. Para eso, es muy recomendable tener el codigo fuente de DemocracyOS a mano para poder ver cómo funcionan partes del código de su interes y entender el flujo de datos a la perfección.
 
-Esta extension agrega otros api endpoints y vistas que complementan a DemocracyOS y permiten la correcta operacion de la plataforma.
+Esta extension agrega otros API endpoints y vistas que complementan a DemocracyOS y permiten la correcta operacion de la plataforma.
 
 Supuestamente todo lo que usted debe modificar (si es necesario) existira bajo la carpeta `/ext`
 
-Luego, siguiendo la estructura de DemocracyOS, se tiene:
+En última instancia, de ser necesario, puede agregar una copia de los archivos originales de DemocracyOS modificados a su antojo en la carpeta `dos-overrides`, respetando la estructura de directorios original. Estos archivos pisarán a los de DemocracyOS bajo la carpeta `lib`. Esta es la forma más directa (y peligrosa) de "editar" el código fuente base de DemocracyOS. Por ejemplo, si quiere editar el archivo original ubicado en `lib/models/comment.js`, tendría que copiar el original a `dos-overrides/models/comment.js` y modificarlo como usted quiera.
+
+---
+
+Siguiendo la estructura de DemocracyOS, se tiene:
 
 * Todo lo que sea el sitio web, bajo `/ext/site`
 * Todo lo que sea el panel de admin, bajo `/ext/admin`
@@ -26,7 +30,8 @@ Luego, siguiendo la estructura de DemocracyOS, se tiene:
 - Si el servicio está levantado, el sitio puede buidearse on-demand debido al watch. O sea, todo cambio que haga en `/ext/site` tiene un watcher que mira cambios. No tiene hot-reload, debe recargar la pagina en cada cambio.
 - A igual que el punto anterior, tambien todo CSS se buildea y cuenta con un watcher. Es necesario tambien recargar la pagina.
 - Si hace cambios en la API, debe detener el servicio (`Ctrl + C`) y volver a levantarlo. No cuenta con un watcher para buildear el codigo.
-
+- Mucho del código css se encuentra en archivos `.styl` que son de [Stylus](http://stylus-lang.com/)
+- Algunos códigos viejos html, con extensión `.jade`, están hechos con el motor de templates [Jade](http://jade-lang.com/)
 ---
 
 Todo lo que necesita para adaptar su plataforma es modificar textos o imagenes bajo la carpeta `/ext/site`.
