@@ -2,7 +2,7 @@
 
 ## Docker
 
-La forma más fácil de correr Consultas Digitales es con **Docker** y **Docker compose**. Se probó exitósamente con las versiones **19.03.5** y **1.24.0** de las mismas, sobre un **Ubuntu 18.04**. Si quiere instalar la plataforma localmente, sin Docker, puede ver el apartado [Instalación directa](#instalación-directa).
+La forma más fácil de correr Consultas Digitales es con **Docker** y **Docker compose**. Se probó exitósamente con las versiones **19.03.5** y **1.24.0** de las mismas, sobre un **Ubuntu 18.04**. Si quiere instalar DemocracyOS puro, localmente, sin Docker, puede ver el apartado [Instalación directa de DemocracyOS](#instalación-directa-de-democracyos).
 
 Una vez que verifique que cuenta con estas dependencias, haga un _fork_ de este repositorio y clónelo localmente.
 
@@ -215,7 +215,7 @@ Posteriormente, cambiar las variables de entorno correspondientes del contenedor
  
  Notar que si bien la conexión a este servidor SMTP no está cifrada, la conexión del servidor SMTP a Gmail sí lo está.
 
-## Instalación directa
+## Instalación directa de DemocracyOS
 Para esto debe seguir las guías oficiales de DemocracyOS sobre [instalación](https://docs.democracyos.org/install.html) y [desarrollo](https://docs.democracyos.org/develop/).
 
 De forma breve se puede resumir en:
