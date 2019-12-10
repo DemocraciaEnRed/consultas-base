@@ -30,7 +30,8 @@ Siguiendo la estructura de DemocracyOS, se tiene:
 - Si el servicio está levantado, el sitio puede buidearse on-demand debido al watch. O sea, todo cambio que haga en `/ext/site` tiene un watcher que mira cambios. No tiene hot-reload, debe recargar la pagina en cada cambio.
 - A igual que el punto anterior, tambien todo CSS se buildea y cuenta con un watcher. Es necesario tambien recargar la pagina.
 - Si hace cambios en la API, debe detener el servicio (`Ctrl + C`) y volver a levantarlo. No cuenta con un watcher para buildear el codigo.
-
+- Mucho del código css se encuentra en archivos `.styl` que son de [Stylus](http://stylus-lang.com/)
+- Algunos códigos viejos html, con extensión `.jade`, están hechos con el motor de templates [Jade](http://jade-lang.com/)
 ---
 
 Todo lo que necesita para adaptar su plataforma es modificar textos o imagenes bajo la carpeta `/ext/site`.
