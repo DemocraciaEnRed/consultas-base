@@ -15,6 +15,7 @@ app.use('/ext/api/admin-stats', require('./admin-stats'))
 app.use('/ext/api/stats', require('./stats'))
 app.use('/ext/api/user-verify', require('./user-verify'))
 app.use('/ext/api/topics-ext', require('./topics-ext'))
+app.use('/ext/api/text', require('./text'))
 
 app.use(function validationErrorHandler (err, req, res, next) {
   if (res.headersSent) return next(err)

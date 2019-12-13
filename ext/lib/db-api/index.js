@@ -4,6 +4,7 @@
 
 exports.forum = require('./forum')
 exports.user = require('./user')
+exports.text = require('./text')
 
 const topicScopes = require('lib/api-v2/db-api/topics/scopes')
 topicScopes.ordinary.keys.expose.push('extra')
