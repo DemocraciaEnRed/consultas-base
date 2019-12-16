@@ -5,7 +5,6 @@ import bus from 'bus'
 import config from 'lib/config'
 import FormAsync from 'lib/site/form-async'
 import userConnector from 'lib/site/connectors/user'
-import BtnMiargentina from './btn-miargentina'
 
 export class SignIn extends Component {
   constructor (props) {
@@ -150,7 +149,6 @@ export class SignIn extends Component {
               <h1>{t('header.signin')}</h1>
             </div>
         </div>
-        <MiArgentinaForm />
         {form}
       </div>
     )
@@ -159,12 +157,3 @@ export class SignIn extends Component {
 
 export default userConnector(SignIn)
 
-function MiArgentinaForm () {
-  return (
-    <div className='miargentina-auth-form'>
-      <BtnMiargentina />
-      <hr />
-      <p className='muted'>{t('signin.or-login-with-email')}</p>
-    </div>
-  )
-}
