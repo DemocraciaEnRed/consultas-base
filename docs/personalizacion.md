@@ -40,14 +40,13 @@ A continuacion damos un listado importantes
 
 ## Imagenes para cambiar
 
-- Icono del navbar y footer: `/ext/lib/site/home-multiforum/assets/logo_consulta-publica.svg`
+- Icono del navbar: `/ext/lib/site/home-multiforum/assets/logo-header.svg`
+- Icono del footer: `/ext/lib/site/footer/assets/logo-footer.svg`
 - Background del header del home: `/ext/lib/site/home-multiforum/assets/header_consulta-publica.png`
 - Iconos del listado del home: 
   - `/ext/lib/site/home-multiforum/assets/icono_consulta-publica-1.svg`
   - `/ext/lib/site/home-multiforum/assets/icono_consulta-publica-2.svg`
   - `/ext/lib/site/home-multiforum/assets/icono_consulta-publica-3.svg`
-- Iconos del header: `/ext/lib/site/home-multiforum/assets/logo-header.svg`
-- Iconos del footer: `/ext/lib/site/footer/assets/logo-footer.svg`
 
 ## Textos para cambiar
 
@@ -103,13 +102,13 @@ SignIn.default = SignInExt
 
 Cada carpeta dentro de `/ext/lib/site` cuenta con las vistas y cada una de ellas puede contar con una carpeta `assets` del cual el componente puede referenciar a esta carpeta.
 
-Cuando se realiza el build, la estructura de carpetas se mantiene. O sea, si tengo un asset en `/ext/lib/site/home-multiforum/assets/logo_consulta-publica.svg` entonces en la URL lo tendre en `http://localhost:3000/ext/lib/site/home-multiforum/logo_consulta-publica.svg`
+Cuando se realiza el build, la estructura de carpetas se mantiene. O sea, si tengo un asset en `/ext/lib/site/home-multiforum/assets/logo-header.svg` entonces en la URL lo tendre en `http://localhost:3000/ext/lib/site/home-multiforum/logo-header.svg`
 
 Note que en el codigo del componente de home-multiforum se referencia usando `url()` o si es un tag `<img>` con `src=` se hace asi:
 
 ```
 <img
-  src="/ext/lib/site/home-multiforum/logo_consulta-publica.svg"
+  src="/ext/lib/site/home-multiforum/logo-header.svg"
   alt="Logo"
   width="270px"
 />
