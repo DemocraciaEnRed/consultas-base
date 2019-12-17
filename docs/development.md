@@ -231,3 +231,12 @@ De forma breve se puede resumir en:
 Se requiere la versión de `node` 6.x.x para correr la plataforma. Recomendamos usar `nvm` para cambiar fácilmente entre una versión y otra de node. Si tenemos esta herramienta instalada, haríamos `nvm install lts/boron` (que es la versión 6.17.1) para cambiar a una versión válida. Una vez instalada, ya podemos hacer directamente `nvm use lts/boron`.
 
 Si no tiene `gulp` instalado puede instalarlo haciendo `npm install -g gulp` (asegurarse de previamente cambiar a la versión de `node` correcta).
+
+### Sistema de builds de DOS
+La plataforma cuenta con diversas formas de buildearse y correr.
+
+Una es con `make`. Esta utiliza el archivo `Makefile` para correr scripts de `npm` como se puede ver en su código. Notar como desde un script se salta a otro (p.ej. de `run` salta a `built` y de `build` a `packages`).
+
+Otra forma es con `gulp`. Este utiliza `gulpfile.js` que simplemente importa el archivo `lib/build/index.js`. Allí, se asignan todos los posibles scripts de `gulp` con el comando `.task(...)`.
+
+Finalmente está la forma clásica con scripts de `npm` definidos en el archivo `package.json` bajo la llave `scripts`. Estos, se corren haciendo `npm run <nombre_del_script>`, p. ej. `npm run serve`. Como verán, muchos de estos utilizan `gulp`.
