@@ -240,3 +240,5 @@ Una es con `make`. Esta utiliza el archivo `Makefile` para correr scripts de `np
 Otra forma es con `gulp`. Este utiliza `gulpfile.js` que simplemente importa el archivo `lib/build/index.js`. Allí, se asignan todos los posibles scripts de `gulp` con el comando `.task(...)`.
 
 Finalmente está la forma clásica con scripts de `npm` definidos en el archivo `package.json` bajo la llave `scripts`. Estos, se corren haciendo `npm run <nombre_del_script>`, p. ej. `npm run serve`. Como verán, muchos de estos utilizan `gulp`.
+
+El único comando indispensable para buildear el sistema es `gulp build` ya que compila todos los archivos js y css a la carpeta `public`, y también copia los assets (imágenes, fonts, etc.).
