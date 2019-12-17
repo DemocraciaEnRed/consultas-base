@@ -224,7 +224,7 @@ De forma breve se puede resumir en:
 - Ubicarse dentro del mismo y hacer `make packages`
 - Agregar algún mail de staff que será lx admin. Para esto crear el archivo `config/development.json` con contenido:   
 `{ "staff": ["unmail@elmail.com"] }`   
-- Levantar una base de datos mongo (por ejemplo con docker: `docker run -p 27017:27017 --name mongodb mongo:3.2`)
+- Levantar una base de datos mongo (por ejemplo con docker: `docker run -p 27017:27017 --name mongodb-dos mongo:3.2`)
 - Correr el script build-watch-serve de `gulp` haciendo `NODE_PATH=. DEBUG=democracyos* gulp bws`. Si esto no funciona pueden intentar correr `make run`.
 - Ir a [http://localhost:3000](http://localhost:3000), registrar su cuenta con el mail de staff y entrar (no hace falta validar el mail)
 
